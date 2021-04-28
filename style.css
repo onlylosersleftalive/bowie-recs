@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5E5;
+    font-size: 1.25rem;
+    color: white;
+}
+
+.main {
+    width: 100%;
+    height: 80vh;
+    background-image: url('images/David-Bowie-full-HD.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+h1 {
+    font-family: "Bebas Neue";
+    font-size: 4rem;
+    line-height: 77px;
+    letter-spacing: 0.1rem;
+    margin-left: 5%;
+}
+
+.red-outline {
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 0.1px #F11B00;
+    padding-top: 5%;
+}
+
+.simple-text {
+    color: white;
+}
+
+.secondary {
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 5%;
+}
+
+.description {
+    font-family: 'Montserrat';
+    font-weight: 100;
+    color: #DB3A26;
+    text-align: center;
+    line-height: 3.125rem;
+    letter-spacing: 0.1rem;
+}
+
+.randomizer {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 1.375rem;
+    letter-spacing: 0.2rem;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.randomizer a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a img {
+    margin-left: 2rem;
+}
