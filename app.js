@@ -101,13 +101,14 @@ books[97] = 'https://www.goodreads.com/book/show/6873.In_Between_the_Sheets?ac=1
 books[98] = 'https://www.goodreads.com/book/show/38155.A_People_s_Tragedy?ac=1&from_search=true&qid=hegU9YVWc7&rank=1';
 books[99] = 'https://www.goodreads.com/book/show/71149.Journey_into_the_Whirlwind?ac=1&from_search=true&qid=i3wP2XWRKx&rank=1';
 
+document.querySelector('a').addEventListener('click', handleClick);
 
-function randomNumber(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min) + min);
+function handleClick() {
+    function randomNumber(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min) + min);
+    }
+
+    document.querySelector('a').setAttribute('href', books[randomNumber(0, 100)]);
 }
-
-let randomBook = books[randomNumber(0, 100)];
-
-document.querySelector('a').setAttribute('href', randomBook);
